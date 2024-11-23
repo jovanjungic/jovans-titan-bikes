@@ -461,17 +461,6 @@ input[type="text"], textarea{
     gap: 100px;
 }
 
-.imgblock{
-    gap: 50px;
-}
-
-.imgblock img{
-    width: 400px;
-    height: 400px;
-    border-radius: 15px;
-    border: solid 5px rgba(var(--darkerblue), 0.4);
-}
-
 .aboutblock img{
     width: 400px;
     height: 400px;
