@@ -1,0 +1,502 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root{
+    --navblue: 16,31,56;
+    --darkblue: 36,36,83;
+    --lightblue: 73,61,129;
+    --shadowblue: 88,88,185;
+    --footerblack: 25,25,25;
+    --darkerblue: 20,20,80;
+}
+
+.aktivan{
+    border-bottom: 2px solid rgb(99, 123, 202);
+}
+
+.txt-cen{
+    text-align: center;
+}
+
+.fl{
+    display: flex;
+}
+
+.fl-rev{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.fl-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.jus-cen{
+    justify-content: center;
+}
+
+.jus-spc-btw{
+    justify-content: space-between;
+}
+
+.jus-spc-ev{
+    justify-content: space-evenly;
+}
+
+.al-cnt{
+    align-items: center;
+}
+
+.bg-wrap{
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.blueshadow{
+    text-shadow: 1px 1px 3px rgb(88, 88, 185);
+}
+
+.blackshadow{
+    text-shadow: 3px 3px 6px black;
+}
+
+.goldglow{
+    text-shadow: 3px 3px 6px gold;
+}
+
+.boldiraj{
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black;
+}
+
+.nodecor{
+    text-decoration: none;
+    color: white;
+}
+
+.noliststyle{
+    list-style-type: none;
+}
+
+.bg-darkblue{
+    background-color: rgba(var(--darkblue), 0.9);
+}
+
+.bg-lightblue{
+    background-color: rgba(var(--lightblue), 0.9);
+}
+
+.img-fluid{
+    object-fit: cover;
+}
+
+.img-contain{
+    object-fit: contain;
+}
+
+.whitetext{
+    color: white;
+}
+
+.mar-left{
+    margin-left: 2rem;
+}
+
+#navbar{
+    background-color: rgb(var(--navblue));
+    padding: 0px 20px;
+}
+
+#navbar-left a img{
+    height: 90px;
+}
+
+#navbar-right ul{
+    gap: 4rem;
+    padding-right: 3rem;
+}
+
+#navbar-right ul li{
+    font-weight: 900;
+    font-size: 1.25rem;
+}
+
+#herowrap{
+    background-image: url("../images/aeroad.jpg");
+    height: 814px;
+}
+
+#hero{
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    /* mozda width i height 100% idk */
+}
+
+#hero-images{
+    padding-top: 1rem;
+    gap: 1rem;
+}
+
+#hero-images img{
+    height: 400px;
+    border: rgb(40, 25, 105) solid 2px;
+    border-radius: 10px;
+}
+
+#text1{
+    width: 40%;
+    gap: 10px;
+}
+
+#text1 h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+#text1 p{
+    font-size: 1.25rem;
+}
+
+.button1{
+    color: inherit;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: rgb(40, 54, 94);
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 1px 1px 5px black;
+    transition: font-size 500ms;
+    animation-name: pomerajlearnmore;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pomerajlearnmore{
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(50px);}
+    100% {transform: translateY(0px);}
+}
+
+.button1:hover{
+    font-size: 1.75rem;
+    animation-play-state: paused;
+}
+
+#content1wrap{
+    background-image: url("../images/alpedhuez.jpg");
+}
+
+#content1{
+    padding: 40px 120px;
+}
+
+#text2{
+    padding: 15px;
+    width: 60%;
+    border: solid 3px #431e66;
+    border-radius: 25px;
+}
+
+#text2 h2{
+    font-size: 2rem;
+}
+
+#content1 img{
+    width: 20%;
+}
+
+#content2wrap{
+    background-image: url("../images/pogi.jpg");
+}
+
+#content2{
+    height: 500px;
+    gap: 350px;
+}
+
+.pagelink{
+    gap: 20px;
+}
+
+.pagelink p{
+    font-size: 2rem;
+}
+
+.pagelink a{
+    font-size: 4rem;
+    font-weight: 800;
+    border: 4px solid rgb(16, 31, 56);
+    padding: 4px 16px;
+    background-color: rgba(40, 77, 139, 0.5);
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px black;
+    transition: font-size 500ms;
+}
+
+.pagelink a:hover{
+    font-size: 5rem;
+}
+
+#footerwrap{
+    background-image: url("../images/footerbg.jpg");
+    height: 323px;
+}
+
+#footer{
+    height: 100%;
+    background-color: rgba(var(--footerblack),0.9);
+}
+
+#footerup{
+    width: 100%;
+}
+
+.footerinfo{
+    height: 100%;
+    gap: 2px;
+}
+
+.footerinfo h2{
+    color: rgb(255,196,88);
+    font-size: 2rem;
+}
+
+#footerdown{
+    width: 100%;
+    gap: 150px;
+    font-size: 1.25rem;
+}
+
+#socials a{
+    padding: 0px 5px;
+    transition: color 500ms;
+}
+
+#rentwrap{
+    background-image: url("../images/aeroad.jpg");
+}
+
+#rent{
+    height: 100%;
+    padding: 30px;
+}
+
+hr{
+    width: 65%;
+}
+
+.rentimgtext{
+    width: 30%;
+    padding: 10px;
+    border: 3px solid rgb(var(--darkerblue));
+    border-radius: 15px;
+    gap: 15px;
+}
+
+.rentimgtext img{
+    padding: 10px;
+    height: 400px;
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.rentimgtext h2{
+    color: rgb(108, 57, 167);
+}
+
+.daily{
+    color: rgb(207, 147, 42);
+}
+
+.rentbutton{
+    background-color: rgba(var(--darkerblue), 0.7);
+    padding: 15px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    border: solid 3px rgb(16, 31, 56);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: font-size 500ms;
+}
+
+#buywrap{
+    background-image: url("../images/alpedhuez.jpg");
+}
+
+.buyitem{
+    padding: 5px 25px;
+    background-color: rgba(122, 102, 102, 0.2);
+    gap: 30px;
+}
+
+.buyitem img{
+    width: 45%;
+}
+
+.buytext{
+    gap: 10px;
+    width: 40%;
+    padding: 10px;
+    background-color: rgba(63, 63, 63, 0.2);
+    border-radius: 10px;
+}
+
+.buybutton{
+    font-weight: 700;
+    padding: 7px;
+    margin-left: auto;
+    border: 4px solid rgb(255, 140, 0);
+    background-color: rgb(255, 154, 32);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: font-size 500ms;
+}
+
+.buybutton:hover, .rentbutton:hover{
+    font-size: 1.25rem;
+}
+
+#impressionswrap{
+    background-image: url("../images/poggio.jpg");
+}
+
+#impressions{
+    gap: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.impression{
+    width: 25%;
+}
+
+.impression img{
+    width: 300px;
+}
+
+#gallerywrapper{
+    background-image: url("../images/climbing.png");
+}
+
+#gallery{
+    padding: 15px;
+    padding-bottom: 55px;
+    gap: 50px;
+}
+
+#gallery h1{
+    text-align: center;
+}
+
+.climb{
+    border: 3px solid rgba(var(--darkblue), 0.9);
+    border-radius: 15px;
+    width: 20%;
+    padding: 10px;
+    gap: 3px;
+}
+
+.climb img{
+    height: 250px;
+    border-radius: 15px;
+}
+
+.climbtext p{
+    font-size: 0.75rem;
+}
+
+#contactwrap{
+    background-image: url("../images/business.jpg");
+}
+
+#contact{
+    padding: 40px;
+}
+
+.gmap{
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+#contact{
+    gap: 150px;
+}
+
+#contactform{
+    width: 400px;
+}
+
+form{
+    gap: 10px;
+    width: 100%;
+}
+
+input[type="text"], textarea{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#aboutwrapper{
+    background-image: url("../images/parisroubaix.jpg");
+}
+
+#about{
+    padding: 35px;
+    gap: 50px;
+}
+
+.aboutblock{
+    gap: 100px;
+}
+
+.imgblock{
+    gap: 50px;
+}
+
+.imgblock img{
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    border: solid 5px rgba(var(--darkerblue), 0.4);
+}
+
+.aboutblock img{
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    border: solid 5px rgba(var(--darkerblue), 0.4);
+}
+
+.abouttext{
+    gap: 20px;
+    width: 500px;
+}
+
+img{
+    transition: all ease-in-out 250ms;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.quicklink{
+    transition: color 500ms, font-size 500ms;
+}
+
+.quicklink:hover, #socials a:hover{
+    color: wheat;
+    font-size: 1.25rem;
+}
