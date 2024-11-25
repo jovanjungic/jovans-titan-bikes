@@ -470,6 +470,10 @@ input[type="text"], textarea{
     gap: 100px;
 }
 
+.orange{
+    color: orange;
+}
+
 .aboutblock img{
     width: 400px;
     height: 400px;
