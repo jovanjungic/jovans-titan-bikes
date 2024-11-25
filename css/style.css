@@ -6,7 +6,6 @@
 
 html {
     scroll-behavior: smooth;
-    overflow: hidden;
 }
 
 :root{
@@ -310,6 +309,7 @@ hr{
     border: 3px solid rgb(var(--darkerblue));
     border-radius: 15px;
     gap: 15px;
+    overflow: hidden;
 }
 
 .rentimgtext img{
