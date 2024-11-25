@@ -4,10 +4,6 @@
     font-family: "Poppins";
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 :root{
     --navblue: 16,31,56;
     --darkblue: 36,36,83;
