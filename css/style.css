@@ -409,7 +409,6 @@ hr{
 }
 
 .climb{
-    border: 3px solid rgba(var(--darkblue), 0.9);
     border-radius: 15px;
     width: 20%;
     padding: 10px;
@@ -492,6 +491,10 @@ img{
 
 img:hover{
     transform: scale(1.1);
+}
+
+.climb img:hover{
+    transform: scale(1.5);
 }
 
 .quicklink{
